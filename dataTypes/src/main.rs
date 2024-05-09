@@ -51,9 +51,9 @@ fn main() {
 
     let six_point_four = p.1;
 
-    let one = x.2;
+    // let one = x.2;
 
-    println!(five_hundred, six_point_four);
+    // println!("{} {}",five_hundred, six_point_four);
 
     let a = [1, 2, 3, 4];
 
