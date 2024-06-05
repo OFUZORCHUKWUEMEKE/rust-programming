@@ -1,10 +1,8 @@
-Vectors allow you to store more than one value in a single data structure that puts all the values next to each other in memory.
-
 fn main() {
 
     let u = vec![1, 2, 3];
 
-    let v:Vec<i32> = Vec::new()
+    let v:Vec<i32> = Vec::new();
 
     // Updating a Vector
 
@@ -27,7 +25,7 @@ fn main() {
 
     match third{
         Some(third)=> println!("The third element is {third}")
-        None=> printin!("There is so third element.")
+        None=> printin!("There is so third element.");
     }
 
     let y = vec![100, 32, 57];
@@ -45,7 +43,7 @@ fn main() {
     // Vectors can only store values that are the same type. This can be inconvenient; there are differently use cases for needng to store a list of items of different types.
 
 
-    emum SpreadsheetCell{
+    enum  SpreadsheetCell{
         Int(i32),
         Float(f64),
         Text(String)
