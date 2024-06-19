@@ -1,0 +1,1 @@
+C:\Users\OFUZOR\ IFEANYICHUKWU\Desktop\rust\trevor_sullivan\modules\target\debug\modules.exe: C:\Users\OFUZOR\ IFEANYICHUKWU\Desktop\rust\trevor_sullivan\modules\src\helpers.rs C:\Users\OFUZOR\ IFEANYICHUKWU\Desktop\rust\trevor_sullivan\modules\src\main.rs
