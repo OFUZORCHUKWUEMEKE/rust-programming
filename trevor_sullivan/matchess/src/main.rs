@@ -1,6 +1,6 @@
 pub mod matches;
 
 fn main() {
-    matches::matchesss()
+    matches::matchesss();
     println!("Hello, world!");
 }
