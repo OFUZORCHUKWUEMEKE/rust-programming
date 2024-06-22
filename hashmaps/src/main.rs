@@ -7,9 +7,9 @@ fn main() {
 
     // CREATING A NEW HASH MAP
 
-    let mut scores = HahMap::new();
+    let mut scores = HashMap::new();
     scores.insert(String::from("Blue"),10);
-    scores.insert(String::from("yellow",50))
+    scores.insert(String::from("yellow"),50);
     println!("Hello, world!");
 
     // ACCESSING VALUES IN A HASH MAP
@@ -25,7 +25,7 @@ fn main() {
 
     let team_name = String::from("Blue");
 
-    let score = scores.get(&team_name).copied().unwrap_or(0)
+    let score = scores.get(&team_name).copied().unwrap_or();
 
 
     for (key,value) in &scores{
