@@ -1,0 +1,1 @@
+C:\Users\OFUZOR\ IFEANYICHUKWU\Desktop\rust\traits\target\debug\traits.exe: C:\Users\OFUZOR\ IFEANYICHUKWU\Desktop\rust\traits\src\lib.rs C:\Users\OFUZOR\ IFEANYICHUKWU\Desktop\rust\traits\src\main.rs

@@ -1,11 +1,29 @@
-use aggregator::{Summmary,Tweet};
+fn main() {
+    println!("Hello World");
+}
 
-fn main(){
-    let tweet = Tweet{
-        username:String::from("horse_ebook"),
-        content:String::fron("Of course , as you probaby know , people"),
-        reply:false,
-        retweet:false
+struct People<T ,doings> {
+    name : String ,
+    task:T
+}
+
+trait doings {
+    fn done();
+
+    fn progress();
+
+    fn cancelled();
+}
+
+impl doings for People {
+    fn done() {
+        println!("Done Effectively")
     }
-    println!("1 new tweet: {}", tweet.summarize());
+    fn progress() {
+        println!("In Progess")
+    }
+
+    fn cancelled() {
+        println!("Cancelled")
+    }
 }
