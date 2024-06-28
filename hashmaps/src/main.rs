@@ -1,34 +1,27 @@
 use std::collections::HashMap;
 
 
+fn main (){
+   let mut book_reviews = HashMap::new();
+   book_reviews.insert("Adventure of huckleberry", "Ofuzor Chukwuemeke");
+   book_reviews.insert("The 5:00am club", "Robin Sharma");
+   book_reviews.insert("Atomic Habits", "James Clear");
+   book_reviews.insert("Rework", "DHH , JASON FRIED");
 
-fn main() {
+   if !book_reviews.contains_key("Adventure of huckleberry"){
+     println!("We've got {} reviews , but Les Miserables aint one.",book_reviews.len());
+   }
 
+   book_reviews.remove("Adventure of huckleberry");
 
-    // CREATING A NEW HASH MAP
+   let to_find = ["Pride and Prejudice","Alice's Adventure in Wonderland"];
 
-    let mut scores = HashMap::new();
-    scores.insert(String::from("Blue"),10);
-    scores.insert(String::from("yellow"),50);
-    println!("Hello, world!");
+   for &book in &to_find{
+      match book_reviews.get(book){
+        Some(review) =>println!("{book}:{review}"),
+        None =>println!("{book} is unreviewed")
+      }
+   }
 
-    // ACCESSING VALUES IN A HASH MAP
-    
-    scores.insert(String::from("Blue"),10);
-    scores.insert(String::from("yellow"),50);
-
-
-    scores.insert(String::from("Blue"), 10);
-
-    scores.entry(String::from("Yellow")).or_insert(50);
-    scores.entry(String::from("Blue")).or_insert(50);
-
-    let team_name = String::from("Blue");
-
-    let score = scores.get(&team_name).copied().unwrap_or();
-
-
-    for (key,value) in &scores{
-        println!("{key}: {value}")
-    }
+   println!("Review for jane:{}",book_reviews["pride is a devil"]);
 }
