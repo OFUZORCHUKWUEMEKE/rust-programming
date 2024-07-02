@@ -7,5 +7,6 @@ pub fn Iterrs() {
 
     for fruit in fruit_iter {
         println!("{}", fruit)
-    }
+    } 
 }
+  
